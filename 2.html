@@ -1,0 +1,70 @@
+<!-- 
+    2. Create a Simple Form with Username and Password Field and perform following DOM
+Operations
+a. Empty validation for all the fields.
+b. Read the value of the above fields and display it in the page, below the forms.
+c. Clear the fields once the user submit the form
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="2.js"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class=" row bg-danger">
+            <!-- username -->
+
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+
+                <div class=" row mt-5">
+                    <span>username: </span>
+                    <input type="text" name="" id="usrId">
+                    <div>
+                        <span id="validusr" style="visibility:hidden;">valid</span>
+                        <span id="Invalidusr" style="visibility:hidden;">invalid</span>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <span>Password: </span>
+                    <input type="password" name="" id="usrPswrd">
+                    <div>
+                        <span id="validpswd" style="visibility:hidden;">valid</span>
+                        <span id="Invalidpswd" style="visibility:hidden;">invalid</span>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <button type="submit" onclick="validate()">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- comments to display -->
+        <!--  -->
+        <div id="commentArea" class="row bg-primary mt-3 d-flex flex-column" style="visibility:hidden;">>
+
+            <div id="cmntSection" class="col bg-warning d-flex justify-content-around mt-2">
+                <div id="username"> tempuser</div>
+                <div id=password>temppasssword</div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
